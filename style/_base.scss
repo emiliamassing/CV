@@ -4,10 +4,16 @@ body{
 
 nav{
     background-color: rgb(245, 201, 120);
-}
-
-ul{
-    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    ul{
+        list-style-type: none;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
 }
 
 aside{
