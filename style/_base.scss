@@ -31,28 +31,53 @@ body{
 /*Menu*/
 
 nav{
-    background-color: rgb(245, 201, 120);
-    padding: 5px;
-    
-    ul{
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: center;
-    }
+    background-color: rgb(193, 191, 188);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
-    a{
-        color: black;
-        text-decoration: none;
+.menuLinks{
+    width: 100%;
+    display: none;
+}
+
+.menuLinks.active{
+    display: flex;
+}
+
+.menuLinks ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    li{
+        list-style-type: none;
+        text-align: center;
+        :hover{
+            background-color: rgb(143, 142, 142);
+        }
+        a{
+            color: black;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: block;
+        }
     }
 }
+
+.cvText{
+    font-size: 2.3rem;
+    margin-left: 0.5em;
+}
+
+/*Menu button*/
 
 button{
     background-color: transparent;
     position: absolute;
     border: 0;
-    top: 1rem;
+    top: 2px;
     right: 1rem;
     height: 45px;
     width: 45px;
