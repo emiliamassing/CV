@@ -67,8 +67,16 @@ nav{
             font-family: 'Libre Baskerville', serif;
             font-size: 1.3rem;
             font-weight: 300;
+            margin-top: 15px;
         }
     }
+}
+
+.menuText{
+    color: #fafafa;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 /*Menu button*/
@@ -98,7 +106,7 @@ h1, h2, h3, h4{
     text-align: center;
 }
 
-h1, h2, h3, h4, p, a{
+h1, h2, h3, h4, p, a, .menuText{
     font-family: 'Libre Baskerville', serif;
 }
 
