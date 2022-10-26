@@ -14,11 +14,35 @@ nav{
             display: flex;
             justify-content: center;
             li{
-                display: block;
+                 display: block;
     
-                a{
+                 &:hover{
+                    background: none;
+                 }
+
+                a.underline{
                     padding: 1rem;
+                    position: relative;
+
+                    &::after{
+                        content:'';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2.7px;
+                        bottom: 10px;
+                        left: 0;
+                        background-color: #fafafa;
+                        transform-origin: bottom right;
+                        transition: transform 0.3s ease-out;
+                    }
+
+                    &:hover:after{
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
                 }
+
             }
         }
     }
