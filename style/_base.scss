@@ -5,8 +5,11 @@ body{
     min-height: 100vh;
 }
 
+/*Menu*/
+
 nav{
     background-color: rgb(245, 201, 120);
+    padding: 5px;
     
     ul{
         list-style-type: none;
@@ -22,18 +25,34 @@ nav{
     }
 }
 
+/*H tags*/
+
 h1, h2, h3, h4{
     text-align: center;
 }
 
+/*Aside*/
 aside{
     background-color: rgb(138, 195, 245);
+    margin-top: 10px;
+    padding: 10px;
 }
 
+img{
+    height: auto;
+    width: 65%;
+}
+
+/*Section*/
 section{
     background-color: plum;
+    margin-top: 10px;
+    padding: 10px;
 }
 
+/*Footer*/
 footer{
     background-color: rgb(165, 230, 165);
+    padding: 15px;
+    margin-top: 10px;
 }
