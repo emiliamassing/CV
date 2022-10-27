@@ -68,14 +68,16 @@ nav{
             font-size: 1.3rem;
             font-weight: 300;
             margin-top: 20px;
+            margin-bottom: 15px;
         }
     }
 }
 
 .menuText{
+    font-family: 'Libre Baskerville', serif;
     color: #fafafa;
-    font-size: 1.3rem;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 15px;
     margin-left: 10px;
 }
 
@@ -100,38 +102,69 @@ span{
     border-radius: 3px;
 }
 
-/*H tags*/
+/*H tags + p*/
 
 h1, h2, h3, h4{
     text-align: center;
 }
 
-h1, h2, h3, h4, p, a, .menuText{
+h1, h2, h3, h4, p, a, .progressBar{
     font-family: 'Libre Baskerville', serif;
+    color: #171717;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+h4{
+    font-size: 1rem;
+}
+
+p{
+    font-weight: 200;
 }
 
 /*Aside*/
 aside{
-    background-color: rgb(138, 195, 245);
+    background-color: #cecece;
     margin-top: 10px;
     padding: 10px;
+
+    .test{
+        
+    }
+
+    .progressBar
+    {
+        width: 80%;
+        margin: 0 auto;
+        p{
+            margin: 0;
+        }
+    }
+
+    progress{
+        width: 11em;
+        height: 1.6em;
+    }
 }
 
-img{
-    height: auto;
-    width: 65%;
-}
 
 /*Section*/
 section{
-    background-color: plum;
+    background-color: #cecece;
     margin-top: 10px;
     padding: 10px;
+
+    ul li{
+        font-family: 'Libre Baskerville', serif;;
+    }
 }
 
 /*Footer*/
 footer{
-    background-color: rgb(165, 230, 165);
+    background-color: #cecece;
     padding: 15px;
     margin-top: 10px;
 }
