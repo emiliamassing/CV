@@ -120,6 +120,7 @@ h1, h2, h3, h4, p, a, .progressBar{
 
 h3{
     font-size: 1.2rem;
+    padding-top: 10px;
 }
 
 h4{
@@ -129,6 +130,19 @@ h4{
 p{
     font-weight: 200;
     font-size: 0.9rem;
+    text-align: center;
+}
+
+/*Border*/
+.border::after{
+    position: absolute;
+    margin-bottom: 2rem;
+    width: 50%;
+    height: 2px;
+    background: #333;
+    border-radius: 100%;
+    content: "";
+    margin-left: 7em;
 }
 
 /*Aside*/
@@ -139,8 +153,7 @@ aside{
 
     .progressBar
     {
-        width: 80%;
-        margin: 0 auto;
+        text-align: center;
         p{
             margin: 0;
         }
@@ -150,6 +163,16 @@ aside{
         width: 11em;
         height: 1.6em;
         accent-color: #28283b;
+    }
+
+    .profileLinks{
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        &:hover{
+            text-decoration: underline #171717;
+        }
     }
 }
 
