@@ -1,4 +1,4 @@
-/*Är det här rätt sätt att använda sig av visually hidden?
+/*Är det här rätt sätt att kunna använda sig av visually hidden?
 För med en mixin kan jag väl anropa där jag vill använda just denna kod. Tänkte
 att det kunde vara bättre än att behöva skriva om all kod ifall jag vill använda
 på flera ställen. eller har jag missuppfattat?*/
@@ -51,6 +51,8 @@ nav{
 .menuLinks.active{
     display: flex;
 }
+
+/*Behöver jag ändra font till en sans-serif font eller fungerar denna? Tänker tillgänglighetsmässingt?*/
 
 .menuLinks ul{
     margin: 0;
@@ -171,7 +173,11 @@ section{
 
 /*Footer*/
 footer{
-    background-color: #cecece;
+    background-color: #333;
     padding: 15px;
     margin-top: 10px;
+
+    p{
+        color: #fafafa;
+    }
 }
