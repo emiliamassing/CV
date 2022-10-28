@@ -105,6 +105,21 @@ span{
     background-color: #fafafa;
     margin-bottom: 5px;
     border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+//Test för animering
+button:focus span:nth-child(2){
+    opacity: 0;
+}
+
+button:focus span:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+button:focus span:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /*H tags + p*/
