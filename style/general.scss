@@ -1,7 +1,11 @@
 @import 'normalize';
 @import 'base';
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 400px) {
+    @import 'mobile';
+}
+
+@media screen and (min-width: 600px) {
     @import 'tablet';
 }
 
