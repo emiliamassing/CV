@@ -1,7 +1,4 @@
-/*Är det här rätt sätt att kunna använda sig av visually hidden?
-För med en mixin kan jag väl anropa där jag vill använda just denna kod. Tänkte
-att det kunde vara bättre än att behöva skriva om all kod ifall jag vill använda
-på flera ställen. eller har jag missuppfattat?*/
+@use "variables" as var;
 
 @mixin visually-hidden{
     position: absolute;
@@ -64,11 +61,11 @@ nav{
             background-color: rgb(71, 70, 70);
         }
         a{
-            color: #fafafa;
+            color: var.$whiteTextColor;
             text-decoration: none;
             padding: 0.5rem 1rem;
             display: block;
-            font-family: 'Libre Baskerville', serif;
+            font-family: var.$fontLibre;
             font-size: 1.3rem;
             font-weight: 300;
             margin-top: 20px;
@@ -78,8 +75,8 @@ nav{
 }
 
 .menuText{
-    font-family: 'Libre Baskerville', serif;
-    color: #fafafa;
+    font-family: var.$fontLibre;
+    color: var.$whiteTextColor;
     font-size: 1rem;
     margin-top: 15px;
     margin-left: 10px;
@@ -101,7 +98,7 @@ span{
     display: block;
     height: 3.3px;
     width: 40px;
-    background-color: #fafafa;
+    background-color: var.$whiteTextColor;
     margin-bottom: 5px;
     border-radius: 3px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -132,8 +129,8 @@ h2, h3{
 }
 
 h1, h2, h3, h4, p, a, .progressBar{
-    font-family: 'Libre Baskerville', serif;
-    color: #171717;
+    font-family: var.$fontLibre;
+    color: var.$blackTextColor;
 }
 
 h3{
@@ -193,7 +190,7 @@ aside{
         font-weight: 700;
 
         &:hover{
-            text-decoration: underline #171717;
+            text-decoration: underline var.$blackTextColor;
         }
     }
 }
@@ -206,7 +203,7 @@ section{
     padding: 10px;
 
     ul li{
-        font-family: 'Libre Baskerville', serif;
+        font-family: var.$blackTextColor;
         font-size: 0.8rem;
         margin: 3px;
     }
