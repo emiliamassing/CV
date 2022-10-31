@@ -58,9 +58,6 @@ button{
     display: none;
 }
 
-//Märkte att du nämnde under lektionen att standard är 12 rutor för gridlayout för desktop. 
-//Tycker du att jag bör ändra min layout så den ser ut som du pratade om?
-
 main{
     display: grid;
     grid-template-rows: auto auto;
@@ -81,6 +78,10 @@ aside{
     grid-row: 1;
     margin-top: 5em;
     padding: 2em;
+
+    img{
+        width: 65%;
+    }
 }
 
 .border::after{
