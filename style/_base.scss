@@ -149,12 +149,12 @@ p{
 }
 
 /*Border*/
-.border{
+.Bottomborder{
     width: 50%;
     margin: 0 auto;
 }
 
-.border::after{
+.Bottomborder::after{
     position: absolute;
     margin-bottom: 2rem;  
     width: 50%;
