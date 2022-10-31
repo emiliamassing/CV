@@ -3,7 +3,7 @@ För med en mixin kan jag väl anropa där jag vill använda just denna kod. Tä
 att det kunde vara bättre än att behöva skriva om all kod ifall jag vill använda
 på flera ställen. eller har jag missuppfattat?*/
 
-@mixin visually-hidden {
+@mixin visually-hidden{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -46,14 +46,12 @@ nav{
 .menuLinks{
     width: 100%;
     display: none;
-    
+    //@include visually-hidden();
 }
 
 .menuLinks.active{
     display: flex;
 }
-
-/*Behöver jag ändra font till en sans-serif font eller fungerar denna? Tänker tillgänglighetsmässingt?*/
 
 .menuLinks ul{
     margin: 0;
