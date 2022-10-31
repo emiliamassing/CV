@@ -68,11 +68,6 @@ main{
     margin: 0 auto;
 }
 
-section{
-    grid-column: 2;
-    margin-top: 5em;
-}
-
 aside{
     grid-column: 1;
     grid-row: 1;
@@ -81,6 +76,15 @@ aside{
 
     img{
         width: 65%;
+    }
+}
+
+section{
+    grid-column: 2;
+    margin-top: 5em;
+
+    h3{
+        font-size: 1.5rem;
     }
 }
 
