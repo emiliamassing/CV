@@ -74,6 +74,10 @@ aside{
     margin-top: 5em;
     padding: 2em;
 
+    .centeredAside{
+        width: 75%;
+    }
+
     img{
         max-width: 85%;
     }
@@ -93,5 +97,5 @@ section{
 }
 
 .centered{
-    width: 70%;
+    width: 60%;
 }
