@@ -193,14 +193,22 @@ aside{
         accent-color: #28283b;
     }
 
-    .profileLinks{
+
+    a{
         text-decoration: none;
-        text-transform: uppercase;
         font-weight: 700;
+        font-size: 1.1rem; 
+        margin: 10px;
 
         &:hover{
             text-decoration: underline var.$blackTextColor;
         }
+    }
+
+    .socialMedia{
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
     }
 
     img{
