@@ -28,7 +28,7 @@ body{
 /*Menu*/
 
 nav{
-    background-color: #333;
+    background-color: var.$darkGray;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -163,7 +163,7 @@ p{
     margin-bottom: 2rem;  
     width: 50%;
     height: 2px;
-    background: #acabab;
+    background: #a19f9f;
     border-radius: 100%;
     content: "";
 }
@@ -190,7 +190,7 @@ aside{
     progress{
         width: 11em;
         height: 1.6em;
-        accent-color: #28283b;
+        accent-color: var.$darkGray;
     }
 
 
@@ -226,11 +226,15 @@ section{
     margin-top: 10px;
     padding: 10px;
 
-    ul li{
-        font-family: var.$fontLibre ;
-        font-size: 0.8rem;
-        margin: 3px;
+    ul{
+        list-style-type: circle;
+        li{
+            font-family: var.$fontLibre ;
+            font-size: 0.8rem;
+            margin: 3px;
+        }
     }
+    
 
     h3{
         font-size: 1.5rem;
@@ -240,7 +244,7 @@ section{
 
 /*Footer*/
 footer{
-    background-color: #333;
+    background-color: var.$darkGray;
     padding: 15px;
     margin-top: 10px;
     display: flex;
