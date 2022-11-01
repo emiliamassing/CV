@@ -22,3 +22,9 @@ section{
 .bottomBorder::after{
     width: 40%;
 }
+
+footer{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
