@@ -19,6 +19,7 @@ html{
 }
 
 body{
+    //Kolla ev efter en bättre bakgrundsbild som inte är vit nertill
     background-image: url("../img/wallpaper.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -28,7 +29,7 @@ body{
 /*Menu*/
 
 nav{
-    background-color: var.$darkGray;
+    background-color: var.$blue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -190,7 +191,7 @@ aside{
     progress{
         width: 11em;
         height: 1.6em;
-        accent-color: var.$darkGray;
+        accent-color: var.$blue;
     }
 
 
@@ -244,7 +245,7 @@ section{
 
 /*Footer*/
 footer{
-    background-color: var.$darkGray;
+    background-color: var.$blue;
     padding: 15px;
     margin-top: 10px;
     display: flex;
