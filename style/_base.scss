@@ -19,7 +19,7 @@ html{
 }
 
 body{
-    background-image: url("../img/background.jpeg");
+    background-image: url("../img/wallpaper.jpg");
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
@@ -58,7 +58,7 @@ nav{
         list-style-type: none;
         text-align: center;
         &:hover{
-            background-color: rgb(71, 70, 70);
+            background-color: #6e8eb6;
         }
         a{
             color: var.$whiteTextColor;
@@ -170,7 +170,7 @@ p{
 
 /*Aside*/
 aside{
-    background-color: #cecece;
+    background-color: var.$contentBackgroundColor;
     margin-top: 3.5em;
     padding: 10px;
 
@@ -222,7 +222,7 @@ aside{
 
 /*Section*/
 section{
-    background-color: #cecece;
+    background-color: var.$contentBackgroundColor;
     margin-top: 10px;
     padding: 10px;
 
