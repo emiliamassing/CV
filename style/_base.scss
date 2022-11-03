@@ -1,6 +1,6 @@
 @use "variables" as var;
 
-@mixin visually-hidden{
+@mixin visuallyHidden{
     position: absolute;
     width: 1px;
     height: 1px;
@@ -12,6 +12,20 @@
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+@mixin RemoveVisuallyHidden{
+    position: unset;
+    width: unset;
+    height: unset;
+    margin: unset;
+    border: unset;
+    padding: unset;
+  
+    white-space: unset;
+    clip-path: unset;
+    clip: unset;
+    overflow: unset;
 }
 
 html{
@@ -33,7 +47,6 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
     min-height: 50px;
     position: fixed;
     top: 0;
@@ -43,12 +56,11 @@ nav{
 
 .menuLinks{
     width: 100%;
-    display: none;
-    //@include visually-hidden();
+    @include visuallyHidden();
 }
 
 .menuLinks.active{
-    display: flex;
+    @include RemoveVisuallyHidden();
 }
 
 .menuLinks ul{
