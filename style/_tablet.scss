@@ -29,4 +29,20 @@ footer{
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    .footerBorder{
+        width: 5%;
+        margin: 0 auto;
+        &::after{
+            position: absolute;
+            margin-bottom: 2rem;  
+            width: 0.1rem;
+            height: 8em;
+            background: #a19f9f;
+            border-radius: 100%;
+            content: "";
+        }
+    }
 }
+
+

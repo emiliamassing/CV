@@ -282,10 +282,16 @@ footer{
     }
 
     .footerBorder{
-        width: 50%;
+        width: 55%;
         margin: 0 auto;
         &::after{
-
+            position: absolute;
+            margin-bottom: 2rem;  
+            width: 50%;
+            height: 2px;
+            background: #a19f9f;
+            border-radius: 100%;
+            content: "";
         }
     }
 }
