@@ -166,19 +166,19 @@ p{
 }
 
 /*Border*/
-.Bottomborder{
+.bottomBorder{
     width: 50%;
     margin: 0 auto;
-}
 
-.Bottomborder::after{
-    position: absolute;
-    margin-bottom: 2rem;  
-    width: 50%;
-    height: 2px;
-    background: #a19f9f;
-    border-radius: 100%;
-    content: "";
+    &::after{
+        position: absolute;
+        margin-bottom: 2rem;  
+        width: 50%;
+        height: 2px;
+        background: #a19f9f;
+        border-radius: 100%;
+        content: "";
+    }
 }
 
 /*Aside*/
@@ -279,5 +279,13 @@ footer{
         justify-content: center;
         font-size: 1.4rem;
         margin-bottom: 20px;
+    }
+
+    .footerBorder{
+        width: 50%;
+        margin: 0 auto;
+        &::after{
+
+        }
     }
 }
