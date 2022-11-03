@@ -23,8 +23,10 @@ section{
     width: 40%;
 }
 
-footer{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+footer{  
+    .footerFlexbox{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
