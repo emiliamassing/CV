@@ -67,10 +67,11 @@ nav{
     margin: 0;
     padding: 0;
     width: 100%;
+    
     li{
         list-style-type: none;
         text-align: center;
-        &:hover{
+        &:hover{    
             background-color: #6e8eb6;
         }
         a{
@@ -135,6 +136,7 @@ button:focus span:nth-child(3){
 
 h1, h2, h3, h4{
     text-align: center;
+    cursor: default;
 }
 
 h2, h3{
@@ -163,6 +165,7 @@ p{
     font-weight: 200;
     font-size: 0.9rem;
     text-align: center;
+    cursor: default;
 }
 
 /*Border*/
@@ -206,18 +209,6 @@ aside{
         accent-color: var.$blue;
     }
 
-
-    a{
-        text-decoration: none;
-        font-weight: 700;
-        font-size: 1.1rem; 
-        margin: 10px;
-
-        &:hover{
-            text-decoration: underline var.$blackTextColor;
-        }
-    }
-
     img{
         width: 54%;
         margin-left: auto;
@@ -239,6 +230,7 @@ section{
             font-family: var.$fontLibre ;
             font-size: 0.8rem;
             margin: 3px;
+            cursor: default;
         }
     }
     
@@ -261,7 +253,7 @@ footer{
         font-size: 1.35rem;
     }
 
-    p, .fa-brands{
+    p, .fa-brands, a{
         color: var.$whiteTextColor;
     }
 
@@ -293,5 +285,9 @@ footer{
             border-radius: 100%;
             content: "";
         }
+    }
+
+    .copyright{
+        margin-top: 1.4em;
     }
 }
