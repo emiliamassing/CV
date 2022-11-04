@@ -109,7 +109,7 @@ aside{
     }
 
     img{
-        max-width: 85%;
+        max-width: 90%;
     }
 }
 
@@ -135,7 +135,12 @@ footer{
         justify-content: space-around;
     }
 
-    a.underline{
+    a{
         text-decoration: none;
+        display: inline-block;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }
