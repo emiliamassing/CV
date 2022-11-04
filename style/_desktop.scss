@@ -139,9 +139,27 @@ footer{
     a{
         text-decoration: none;
         display: inline-block;
+        position: relative;
 
-        &:hover{
-            text-decoration: underline;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var.$whiteTextColor;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
         }
+
+        &:hover:after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        /*&:hover{
+            text-decoration: underline;
+        }*/
     }
 }
