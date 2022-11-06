@@ -196,6 +196,10 @@ aside{
         margin: 0 auto;
     }
 
+    h2{
+        font-size: 1.3rem;
+    }
+
     .progressBar
     {
         text-align: center;
@@ -258,6 +262,10 @@ footer{
         color: var.$whiteTextColor;
     }
 
+    a{
+        margin-bottom: 1rem;
+    }
+
     .fa-brands{
         margin: 10px;
     }
@@ -276,6 +284,13 @@ footer{
         justify-content: center;
         font-size: 1.4rem;
         margin-bottom: 20px;
+    }
+
+    .contactFlexbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3em;
     }
 
     .footerBorder{
