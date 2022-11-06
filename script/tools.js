@@ -9,6 +9,7 @@ menuButton.addEventListener('click', () =>{
     if(!menuOpen) menuButton.blur();  //"Tar bort" focus från knappen 
     menuLinks.classList.toggle('active');
     menuButton.classList.toggle('active');
+    menuButton.setAttribute('aria-expanded', true);
 })
 
 //Tar bort active när man klickar på en av länkarna. Gäller alla länkar
